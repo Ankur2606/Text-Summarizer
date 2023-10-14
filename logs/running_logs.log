@@ -100,3 +100,28 @@ x==========x]
 [2023-10-14 23:23:19,425: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
 
 x==========x]
+[2023-10-15 01:15:16,422: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2023-10-15 01:15:16,437: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-15 01:15:16,437: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-15 01:15:16,437: INFO: common: created directory at: artifacts]
+[2023-10-15 01:15:16,437: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-10-15 01:15:16,437: INFO: data_ingestion: File already exists of size: ~ 7718 KB]
+[2023-10-15 01:15:16,576: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2023-10-15 01:15:16,576: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2023-10-15 01:15:16,576: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-15 01:15:16,576: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-15 01:15:16,591: INFO: common: created directory at: artifacts]
+[2023-10-15 01:15:16,591: INFO: common: created directory at: artifacts/data_validation]
+[2023-10-15 01:15:16,591: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2023-10-15 01:15:16,591: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2023-10-15 01:15:16,591: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-15 01:15:16,591: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-15 01:15:16,591: INFO: common: created directory at: artifacts]
+[2023-10-15 01:15:16,591: INFO: common: created directory at: artifacts/data_transformation]
+[2023-10-15 01:15:33,614: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
