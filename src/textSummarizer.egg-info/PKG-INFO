@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: textSummarizer
+Version: 0.0.0
+Summary: A small python package for NLP app
+Home-page: https://github.com/Ankur2606/Text-Summarizer
+Author: Ankur2606
+Author-email: bhavyapratapsinghtomar@gmail.com
+Project-URL: Bug Tracker, https://github.com/Ankur2606/Text-Summarizer/issues
+License-File: LICENSE
+
+# Text-Summarizer
+An nlp based Text-Summarizer built in such a way that can be used as template for building other nlp projects
