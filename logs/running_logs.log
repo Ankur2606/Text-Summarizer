@@ -125,3 +125,113 @@ x==========x]
 [2023-10-15 01:15:33,614: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
 
 x==========x]
+[2023-10-15 02:07:14,784: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2023-10-15 02:07:14,795: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-15 02:07:14,804: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-15 02:07:14,804: INFO: common: created directory at: artifacts]
+[2023-10-15 02:07:14,804: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-10-15 02:07:14,804: INFO: data_ingestion: File already exists of size: ~ 7718 KB]
+[2023-10-15 02:07:14,963: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2023-10-15 02:07:14,964: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2023-10-15 02:07:14,964: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-15 02:07:14,964: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-15 02:07:14,964: INFO: common: created directory at: artifacts]
+[2023-10-15 02:07:14,964: INFO: common: created directory at: artifacts/data_validation]
+[2023-10-15 02:07:14,976: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2023-10-15 02:07:14,976: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2023-10-15 02:07:14,978: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-15 02:07:14,984: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-15 02:07:14,984: INFO: common: created directory at: artifacts]
+[2023-10-15 02:07:14,984: INFO: common: created directory at: artifacts/data_transformation]
+[2023-10-15 02:07:17,886: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2023-10-15 02:07:17,886: INFO: main: *******************]
+[2023-10-15 02:07:17,886: INFO: main: >>>>>> stage Model Trainer stage started <<<<<<]
+[2023-10-15 02:07:17,894: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-15 02:07:17,894: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-15 02:07:17,894: INFO: common: created directory at: artifacts]
+[2023-10-15 02:07:17,894: INFO: common: created directory at: artifacts/model_trainer]
+[2023-10-15 02:10:01,469: ERROR: main: HTTPSConnectionPool(host='cdn-lfs.huggingface.co', port=443): Read timed out.]
+Traceback (most recent call last):
+  File "C:\Users\Asus\anaconda3\envs\textS\lib\site-packages\urllib3\response.py", line 444, in _error_catcher
+    yield
+  File "C:\Users\Asus\anaconda3\envs\textS\lib\site-packages\urllib3\response.py", line 567, in read
+    data = self._fp_read(amt) if not fp_closed else b""
+  File "C:\Users\Asus\anaconda3\envs\textS\lib\site-packages\urllib3\response.py", line 525, in _fp_read
+    data = self._fp.read(chunk_amt)
+  File "C:\Users\Asus\anaconda3\envs\textS\lib\http\client.py", line 459, in read
+    n = self.readinto(b)
+  File "C:\Users\Asus\anaconda3\envs\textS\lib\http\client.py", line 503, in readinto
+    n = self.fp.readinto(b)
+  File "C:\Users\Asus\anaconda3\envs\textS\lib\socket.py", line 669, in readinto
+    return self._sock.recv_into(b)
+  File "C:\Users\Asus\anaconda3\envs\textS\lib\ssl.py", line 1274, in recv_into
+    return self.read(nbytes, buffer)
+  File "C:\Users\Asus\anaconda3\envs\textS\lib\ssl.py", line 1132, in read
+    return self._sslobj.read(len, buffer)
+socket.timeout: The read operation timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Asus\anaconda3\envs\textS\lib\site-packages\requests\models.py", line 816, in generate
+    yield from self.raw.stream(chunk_size, decode_content=True)
+  File "C:\Users\Asus\anaconda3\envs\textS\lib\site-packages\urllib3\response.py", line 628, in stream
+    data = self.read(amt=amt, decode_content=decode_content)
+  File "C:\Users\Asus\anaconda3\envs\textS\lib\site-packages\urllib3\response.py", line 593, in read
+    raise IncompleteRead(self._fp_bytes_read, self.length_remaining)
+  File "C:\Users\Asus\anaconda3\envs\textS\lib\contextlib.py", line 131, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "C:\Users\Asus\anaconda3\envs\textS\lib\site-packages\urllib3\response.py", line 449, in _error_catcher
+    raise ReadTimeoutError(self._pool, None, "Read timed out.")
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='cdn-lfs.huggingface.co', port=443): Read timed out.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "main.py", line 51, in <module>
+    model_trainer.main()
+  File "c:\users\asus\onedrive\desktop\ml project krishnaik\text-summarizer\src\textSummarizer\pipeline\stage_04_model_trainer.py", line 14, in main
+    model_trainer_config.train()
+  File "c:\users\asus\onedrive\desktop\ml project krishnaik\text-summarizer\src\textSummarizer\conponents\model_trainer.py", line 19, in train
+    model_pegasus = AutoModelForSeq2SeqLM.from_pretrained(self.config.model_ckpt).to(device)
+  File "C:\Users\Asus\anaconda3\envs\textS\lib\site-packages\transformers\models\auto\auto_factory.py", line 565, in from_pretrained
+    return model_class.from_pretrained(
+  File "C:\Users\Asus\anaconda3\envs\textS\lib\site-packages\transformers\modeling_utils.py", line 2929, in from_pretrained
+    resolved_archive_file = cached_file(
+  File "C:\Users\Asus\anaconda3\envs\textS\lib\site-packages\transformers\utils\hub.py", line 429, in cached_file
+    resolved_file = hf_hub_download(
+  File "C:\Users\Asus\anaconda3\envs\textS\lib\site-packages\huggingface_hub\utils\_validators.py", line 118, in _inner_fn
+    return fn(*args, **kwargs)
+  File "C:\Users\Asus\anaconda3\envs\textS\lib\site-packages\huggingface_hub\file_download.py", line 1431, in hf_hub_download
+    http_get(
+  File "C:\Users\Asus\anaconda3\envs\textS\lib\site-packages\huggingface_hub\file_download.py", line 551, in http_get
+    for chunk in r.iter_content(chunk_size=10 * 1024 * 1024):
+  File "C:\Users\Asus\anaconda3\envs\textS\lib\site-packages\requests\models.py", line 822, in generate
+    raise ConnectionError(e)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='cdn-lfs.huggingface.co', port=443): Read timed out.
+[2023-10-15 02:12:10,601: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-15 02:12:10,605: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-15 02:12:10,606: INFO: common: created directory at: artifacts]
+[2023-10-15 02:12:10,606: INFO: common: created directory at: artifacts/model_trainer]
+[2023-10-15 02:29:29,925: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-15 02:29:29,931: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-15 02:29:29,938: INFO: common: created directory at: artifacts]
+[2023-10-15 02:29:29,940: INFO: common: created directory at: artifacts/model_trainer]
+[2023-10-15 02:30:57,709: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-15 02:30:57,720: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-15 02:30:57,723: INFO: common: created directory at: artifacts]
+[2023-10-15 02:30:57,727: INFO: common: created directory at: artifacts/model_trainer]
+[2023-10-15 02:56:35,618: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-15 02:56:35,627: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-15 02:56:35,630: INFO: common: created directory at: artifacts]
+[2023-10-15 02:56:35,633: INFO: common: created directory at: artifacts/model_trainer]
+[2023-10-15 03:45:31,209: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-15 03:45:31,217: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-15 03:45:31,219: INFO: common: created directory at: artifacts]
+[2023-10-15 03:45:31,221: INFO: common: created directory at: artifacts/model_evaluation]
