@@ -1,1 +1,28 @@
+# Ignore compiled Python files
+*.pyc
 
+# Ignore virtual environment
+venv/
+
+# Ignore logs
+*.log
+
+# Ignore data files
+data/
+
+# Ignore generated documentation
+docs/_build/
+
+# Ignore local configuration files
+config.local.yml
+
+# Ignore IDE files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Ignore compiled JavaScript files
+artifacts
+
+**/__pycache__/

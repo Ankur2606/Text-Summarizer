@@ -8,6 +8,9 @@ from pathlib import Path
 from typing import Any
 
 
+ 
+#ensure_annotations is a decorator that checks the type of the arguments passed to the function.
+#box is a library that allows you to access nested dictionaries with the dot notation.
 
 @ensure_annotations
 def read_yaml(path_to_yaml: Path) -> ConfigBox:
