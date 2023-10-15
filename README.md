@@ -20,18 +20,6 @@ Here are some of the key features that set our NLP Summarizer apart:
 
 - **User-Friendly**: With an intuitive interface and comprehensive documentation, even those new to NLP can easily integrate and employ our tool.
 
-## Getting Started
-
-Getting started with our NLP Summarizer is straightforward. Follow these steps to set up and start summarizing:
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/nlp-summarizer.git
-   
-2. cd Text-Summarizer
-   <br>
-3. pip install -r requirements.txt
-
 
 ## Workflows
 
@@ -82,9 +70,9 @@ open up you local host and port
 
 
 ```bash
-Author: Krish Naik
-Data Scientist
-Email: krishnaik06@gmail.com
+Author: Bhavya Pratap Singh Tomar
+Sophomore at MITS
+Email: bhavya Pratap Singh Tomar
 
 ```
 
