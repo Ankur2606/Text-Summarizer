@@ -1,4 +1,37 @@
-# End to end Text-Summarizer-Project
+# Text Summarizer
+
+![logo](https://github.com/Ankur2606/Text-Summarizer/assets/66749243/f64420ee-9553-4bf2-a13e-608370eff482)
+
+## Introduction
+
+A sophisticated tool designed to streamline the process of extracting meaningful insights and concise summaries from large volumes of text. In an age where information overload is commonplace, our NLP Summarizer stands as a powerful solution to distill the essence of textual content, saving you time and providing clarity.
+
+The project is driven by state-of-the-art Natural Language Processing (NLP) techniques, making it an invaluable asset for researchers, content creators, or anyone seeking to efficiently condense vast amounts of text while preserving context and accuracy.
+
+It's engineered to excel in precision, flexibility, and ease of integration, serving as a versatile tool for various NLP applications.
+
+## Key Features
+
+Here are some of the key features that set our NLP Summarizer apart:
+
+- **NLP Precision**: Our summarizer utilizes advanced NLP algorithms to ensure that summaries maintain context and relevance.
+
+- **Versatility**: Use our NLP Summarizer as a template for your NLP projects, saving you time and effort in project development.
+
+- **User-Friendly**: With an intuitive interface and comprehensive documentation, even those new to NLP can easily integrate and employ our tool.
+
+## Getting Started
+
+Getting started with our NLP Summarizer is straightforward. Follow these steps to set up and start summarizing:
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/nlp-summarizer.git
+   
+2. cd Text-Summarizer
+   <br>
+3. pip install -r requirements.txt
+
 
 ## Workflows
 
