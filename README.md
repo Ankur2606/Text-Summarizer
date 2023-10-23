@@ -39,7 +39,7 @@ Here are some of the key features that set our NLP Summarizer apart:
 Clone the repository
 
 ```bash
-https://github.com/entbappy/End-to-end-Text-Summarization
+https://github.com/Ankur2606/Text-Summarizer.git
 ```
 ### STEP 01- Create a conda environment after opening the repository
 
@@ -72,8 +72,7 @@ open up you local host and port
 ```bash
 Author: Bhavya Pratap Singh Tomar
 Sophomore at MITS
-Email: bhavya Pratap Singh Tomar
-
+Email: bhavyapratapsinghtomar@gmail.com
 ```
 
 
